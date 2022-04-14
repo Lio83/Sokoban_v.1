@@ -13,6 +13,8 @@ function love.load()
   love.window.setTitle("Sokoban_V.1 by Lio_83")
   
   font = love.graphics.setNewFont("fonts/aAtmospheric.ttf", 15)
+
+  Level.Draw()
 end
 
 function love.update(dt)
