@@ -9,6 +9,8 @@ function love.load()
 
   largeur_ecran = love.graphics.getWidth()
   hauteur_ecran = love.graphics.getHeight()
+
+  love.window.setTitle("Sokoban_V.1 by Lio_83")
   
 end
 
@@ -16,6 +18,7 @@ function love.update(dt)
 end
 
 function love.draw()
+  love.graphics.print()
 end
 
 function love.keypressed(key)
