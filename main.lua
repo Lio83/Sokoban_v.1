@@ -6,6 +6,7 @@ io.stdout:setvbuf('no')
 love.graphics.setDefaultFilter("nearest")
 
 level = require("Level")
+hero = require("Hero")
 
 function love.load()
 
@@ -17,6 +18,7 @@ function love.load()
   font = love.graphics.setNewFont("fonts/aAtmospheric.ttf", 15)
 
   level.Load()
+  hero.Load()
 end
 
 function love.update(dt)
@@ -29,6 +31,7 @@ function love.draw()
   love.graphics.setColor(1, 1, 1)
 
   level.Draw()
+  hero.Draw()
 end
 
 function love.keypressed(key)
