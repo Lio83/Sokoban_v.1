@@ -20,7 +20,7 @@ end
 
 function love.draw()
 
-  love.graphics.setColor(0, 1, 0)
+  love.graphics.setColor(0, 0.6, 0)
   love.graphics.print("Level 1/1", 630, 550, 0, 1.5, 1.5)
   love.graphics.setColor(1, 1, 1)
 end
