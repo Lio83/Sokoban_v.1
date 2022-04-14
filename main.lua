@@ -12,12 +12,17 @@ function love.load()
 
   love.window.setTitle("Sokoban_V.1 by Lio_83")
   
+  font = love.graphics.setNewFont("fonts/aAtmospheric.ttf", 15)
 end
 
 function love.update(dt)
 end
 
 function love.draw()
+
+  love.graphics.setColor(0, 1, 0)
+  love.graphics.print("Level 1/1", 630, 550, 0, 1.5, 1.5)
+  love.graphics.setColor(1, 1, 1)
 end
 
 function love.keypressed(key)
