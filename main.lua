@@ -7,6 +7,7 @@ love.graphics.setDefaultFilter("nearest")
 
 require("init")
 level = require("level")
+hero = require("hero")
 
 function love.load()
   font = love.graphics.setNewFont("fonts/aAtmospheric.ttf", 15)

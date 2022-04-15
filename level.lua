@@ -1,6 +1,6 @@
 local level = {}
 
-function level.Load()
+function level.init()
 end
 
 function level.update(dt)

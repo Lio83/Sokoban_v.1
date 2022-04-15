@@ -9,3 +9,7 @@ end
 function init_Functions()
     love.window.setTitle("SOKOBAN_V.1 by Lio_83")
 end
+
+function init_Draw()
+    love.graphics.print("init")
+end
