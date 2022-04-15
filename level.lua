@@ -3,7 +3,7 @@ local level = {}
 function level.Load()
 end
 
-function level.Update(dt)
+function level.update(dt)
 end
 
 function level.Draw()

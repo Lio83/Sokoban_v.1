@@ -5,37 +5,28 @@ io.stdout:setvbuf('no')
 -- Indispensable pour du pixel art
 love.graphics.setDefaultFilter("nearest")
 
-level = require("Level")
-hero = require("Hero")
+require("init")
+level = require("level")
 
 function love.load()
-
-  largeur_ecran = love.graphics.getWidth()
-  hauteur_ecran = love.graphics.getHeight()
-
-  love.window.setTitle("Sokoban_V.1 by Lio_83")
-  
   font = love.graphics.setNewFont("fonts/aAtmospheric.ttf", 15)
-
-  level.Load()
-  hero.Load()
+  init()
 end
 
 function love.update(dt)
 end
 
 function love.draw()
-
+  
   love.graphics.setColor(0, 0.6, 0)
   love.graphics.print("Level 1/1", 630, 550, 0, 1.5, 1.5)
   love.graphics.setColor(1, 1, 1)
 
   level.Draw()
-  hero.Draw()
 end
 
 function love.keypressed(key)
-    if key == "escape" then
-        love.event.quit()
-    end    
+  if key == "escape" then
+      love.event.quit()
+  end    
 end
