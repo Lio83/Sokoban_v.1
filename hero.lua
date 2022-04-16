@@ -1,6 +1,6 @@
 local hero = {}
 
-function hero.init()
+function hero.Load()
 end
 
 function hero.update(dt)
