@@ -10,9 +10,13 @@ hero = require("hero")
 
 function love.load()
   font = love.graphics.setNewFont("fonts/aAtmospheric.ttf", 15)
+  level.Load()
+  hero.Load()
 end
 
 function love.update(dt)
+  level.update()
+  hero.update()
 end
 
 function love.draw()
@@ -22,6 +26,7 @@ function love.draw()
   love.graphics.setColor(1, 1, 1)
 
   level.Draw()
+  hero.Draw()
 end
 
 function love.keypressed(key)
