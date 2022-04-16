@@ -7,13 +7,18 @@ love.graphics.setDefaultFilter("nearest")
 
 level = require("level")
 hero = require("hero")
+sound = require("sound")
 
 text_Title_Level = {x = 630, y = 550}
 
 function love.load()
   font = love.graphics.setNewFont("fonts/aAtmospheric.ttf", 15)
+
+  love.window.setTitle("SOKOBAN_V.1")
+
   level.Load()
   hero.Load()
+  sound.Load()
 end
 
 function love.update(dt)
