@@ -8,6 +8,8 @@ love.graphics.setDefaultFilter("nearest")
 level = require("level")
 hero = require("hero")
 
+text_Title_Level = {x = 630, y = 550}
+
 function love.load()
   font = love.graphics.setNewFont("fonts/aAtmospheric.ttf", 15)
   level.Load()
@@ -22,7 +24,7 @@ end
 function love.draw()
   
   love.graphics.setColor(0, 0.6, 0)
-  love.graphics.print("Level 1/1", 630, 550, 0, 1.5, 1.5)
+  love.graphics.print("Level 1/1", text_Title_Level.x, text_Title_Level.y, 0, 1.5, 1.5)
   love.graphics.setColor(1, 1, 1)
 
   level.Draw()
