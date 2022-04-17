@@ -20,8 +20,9 @@ function love.load()
   hero.Load()
 
   -- Chargement des sons
-  -- sound = love.audio.newSource("sound/Sokoban_1.mp3", "static")
-  -- love.audio.play(sound)
+  sound = love.audio.newSource("sound/Sokoban_1.mp3", "static")
+  love.audio.play(sound)
+  sound:setLooping(true)
 end
 
 function love.update(dt)
