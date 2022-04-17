@@ -7,18 +7,21 @@ love.graphics.setDefaultFilter("nearest")
 
 level = require("level")
 hero = require("hero")
-sound = require("sound")
 
 text_Title_Level = {x = 630, y = 550}
 
 function love.load()
+  -- Chargement de la police
   font = love.graphics.setNewFont("fonts/aAtmospheric.ttf", 15)
 
   love.window.setTitle("SOKOBAN_V.1")
 
   level.Load()
   hero.Load()
-  sound.Load()
+
+  -- Chargement des sons
+  sound = love.audio.newSource("sound/Sokoban_1.mp3", "static")
+  love.audio.play(sound)
 end
 
 function love.update(dt)
