@@ -10,6 +10,13 @@ hero = require("hero")
 
 text_Title_Level = {x = 630, y = 550}
 
+function tilemap()
+end
+
+function loadlevel(pMap)
+
+end
+
 function love.load()
   -- Chargement de la police
   font = love.graphics.setNewFont("fonts/aAtmospheric.ttf", 15)
